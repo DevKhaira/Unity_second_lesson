@@ -68,11 +68,11 @@
     <Compile Include="Assets\WM2000\Terminal\InputBuffer.cs" />
     <Compile Include="Assets\WM2000\Terminal\Terminal.cs" />
     <Compile Include="Assets\WM2000\Utility.cs" />
-    <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Dev/Documents/Unity/2_Terminal_Hacker/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>C:/Users/Dev/Documents/Unity/2_Terminal_Hacker/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>C:/Users/Dev/Documents/Unity/2_Terminal_Hacker/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
