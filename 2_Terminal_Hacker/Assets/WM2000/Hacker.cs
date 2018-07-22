@@ -107,18 +107,69 @@ public class Hacker : MonoBehaviour {
             }
         if (victory == true)
         {
-            currentScreen = Screen.Win;
-            Terminal.ClearScreen();
-            Terminal.WriteLine("Well Done Meeshy, I love you!");
+            Victory();
         } else
         {
             Terminal.ClearScreen();
-            Terminal.WriteLine("guess again gorgeous");
+            Terminal.WriteLine("guess again gorgeous ⊂(●￣(エ)￣●)⊃");
             Terminal.WriteLine("You have chosen " + bears[level - 1] + "'s room");
             Terminal.WriteLine("Hint: " + scramblePassword(chosenPassword));
         }
     }
+    private void Victory ()
+    {
+        currentScreen = Screen.Win;
+        Terminal.ClearScreen();
+        switch (level)
+        {
+            case 1:
+                Terminal.WriteLine(
+                   @" 
+( • ) ( • )ԅ(‾⌣‾ԅ) 
+ \       /        
+  )     (       
+ (       )      
+  \     /      
+   \  \/        
+    \  \          "); 
+                break;
+            case 2:
+                Terminal.WriteLine(@"
+             .------.
+            /        `\
+          _|_          |
+         /   \         | 
+         '==='         |
+         . ' .         |
+        . : ' .        |
+           '.          |
+       . '    .        |
+        .-''' -.       |
+       /  \___ \       |
+       |/`    \|       |
+       (  a  a )       |
+       | _\ |  |       |
+       )\  =  /        |
+   _.- ' '---;         | 
 
+");
+                break;
+            case 3:
+                Terminal.WriteLine(@"
+     (()__(()
+     \ o o   \
+     (_()_)__/ \             
+    / _,==.____ \
+   (   |--|      )
+   /\_.|__|'-.__/\_
+   \  \      (     /
+   )  '._____)    /    
+(((____.--(((____/
+");
+                break;
+        }
+        Terminal.WriteLine("Well Done Meeshy, I love you!");
+    }
     private void StartGame(int input)
     {
         currentScreen = Screen.Password;
